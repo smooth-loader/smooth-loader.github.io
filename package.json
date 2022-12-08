@@ -1,0 +1,16 @@
+{
+  "name": "smooth-loader-docs",
+  "version": "1.0.0",
+  "main": "docs/dist/index.js",
+  "repository": "https://github.com/SerhiiCho/smooth-loader-docs",
+  "author": "SerhiiCho <serhiicho@protonmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-search": "^2.0.0-beta.53",
+    "vuepress": "^2.0.0-beta.53"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  }
+}
