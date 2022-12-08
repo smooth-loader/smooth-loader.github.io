@@ -1,0 +1,1 @@
+# Documentation for [smooth-loader](https://github.com/SerhiiCho/smooth-loader) package
