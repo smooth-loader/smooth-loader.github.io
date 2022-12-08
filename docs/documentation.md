@@ -71,7 +71,7 @@ You can add a small version of the image to `src` attribute on image element `<i
 
 To use this feature, you'll need small versions of your images which will be loaded right away when the page loads. Let's say I have 2 same images with different sizes:
 
-![Big and small images](https://serhii.io/storage/other/big-and-small-images.png)
+![Big and small images](images/big-and-small-images.png)
 
 I want to load a small image on the initial page load, and when person scrolls into the image view, the bigger version will be loaded and it will replace the small one. In my HTML I will simply add an `src` attribute with path to a small image.
 

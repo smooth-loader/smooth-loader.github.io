@@ -19,7 +19,7 @@ export default defineUserConfig({
         })
     ],
     theme: defaultTheme({
-        logo: '/images/logo.png',
+        logo: '/images/favicon.png',
         navbar: [
             {
                 text: 'Documentation',
