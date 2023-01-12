@@ -43,7 +43,8 @@ export default defineUserConfig({
             },
             {
                 text: '👨🏻‍💻 About author',
-                link: 'https://serhii.io/about-me?welcome=MzX33',
+                link: 'https://serhii.io/about-me',
+                rel: 'author',
             },
         ],
     }),
