@@ -22,7 +22,7 @@ export default defineUserConfig({
         logo: '/images/favicon.png',
         navbar: [
             {
-                text: 'Documentation',
+                text: 'Docs',
                 link: '/documentation',
             },
             {
@@ -42,9 +42,13 @@ export default defineUserConfig({
                 link: 'https://github.com/SerhiiCho/smooth-loader/blob/master/CHANGELOG.md',
             },
             {
-                text: '👨🏻‍💻 About author',
+                text: '👨🏻‍💻 Author',
                 link: 'https://serhii.io/about-me',
                 rel: 'author',
+            },
+            {
+                text: '☕️ By me a coffee',
+                link: 'https://www.buymeacoffee.com/serhiicho',
             },
         ],
     }),
