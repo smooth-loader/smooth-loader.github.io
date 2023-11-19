@@ -35,11 +35,11 @@ export default defineUserConfig({
             },
             {
                 text: 'GitHub',
-                link: 'https://github.com/SerhiiCho/smooth-loader',
+                link: 'https://github.com/smooth-loader/smooth-loader',
             },
             {
                 text: '📃 Changelog',
-                link: 'https://github.com/SerhiiCho/smooth-loader/blob/master/CHANGELOG.md',
+                link: 'https://github.com/smooth-loader/smooth-loader/blob/master/CHANGELOG.md',
             },
             {
                 text: '👨🏻‍💻 Author',
