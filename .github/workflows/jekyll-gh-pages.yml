@@ -33,11 +33,11 @@ jobs:
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./docs/.vuepress/dist
-          destination: ./docs/.vuepress/dist
+          destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-            path: ./docs/.vuepress/dist
+            path: ./_site
 
   # Deployment job
   deploy:
