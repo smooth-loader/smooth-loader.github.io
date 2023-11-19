@@ -32,7 +32,7 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./docs/.vuepress
+          source: ./docs/.vuepress/dist
           destination: ./docs/.vuepress/dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
