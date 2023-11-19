@@ -32,12 +32,10 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./
+          source: ./docs/.vuepress
           destination: ./docs/.vuepress/dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
-        with:
-            path: ./docs/.vuepress/dist
 
   # Deployment job
   deploy:
@@ -50,3 +48,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        with:
+            target-folder: ./docs/.vuepress/dist
