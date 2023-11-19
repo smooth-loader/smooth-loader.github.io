@@ -2,7 +2,7 @@
   "name": "smooth-loader-docs",
   "version": "1.0.0",
   "main": "docs/dist/index.js",
-  "repository": "https://github.com/SerhiiCho/smooth-loader-docs",
+  "repository": "https://github.com/smooth-loader/smooth-loader-docs",
   "author": "SerhiiCho <serhiicho@protonmail.com>",
   "license": "MIT",
   "devDependencies": {

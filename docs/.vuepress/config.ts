@@ -2,7 +2,7 @@ import { defineUserConfig, defaultTheme } from 'vuepress'
 import { searchPlugin } from '@vuepress/plugin-search'
 
 export default defineUserConfig({
-    base: '/smooth-loader-docs/',
+    base: '/',
     lang: 'en-US',
     title: 'Smooth loader',
     description: 'Smooth loader allows you smoothly lazy load images and background images',
