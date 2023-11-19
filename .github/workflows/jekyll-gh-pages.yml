@@ -49,4 +49,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
         with:
+            path: ./docs/.vuepress
             target-folder: ./docs/.vuepress/dist
