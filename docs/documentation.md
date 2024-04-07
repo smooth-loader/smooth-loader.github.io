@@ -8,13 +8,13 @@ This package is a MUST-HAVE for every website containing multiple images on the 
 
 ## 🎁 Features
 
-- 😍 Well-documented;
-- 😍 Written in TypeScript;
-- 😍 Very small package;
-- 😍 Loads images with IMG tag and backgrounds;
-- 😍 Loads images with a smooth fade in animation;
-- 😍 For image elements, you can show minified version of the image on initial page load;
-- 😍 Configurable;
+- 😍 Well-documented
+- 😍 Written in TypeScript
+- 😍 Very small package
+- 😍 Loads images with IMG tag and backgrounds
+- 😍 Loads images with a smooth fade in animation
+- 😍 For image elements, you can show minified version of the image on initial page load
+- 😍 Configurable
 
 ## ✍️ Usage
 
@@ -49,7 +49,9 @@ if (myPhoto) {
 }
 ```
 
-> Note, that lazy loading works only when your elements are already in the DOM. Meaning, if images are loaded after the `smoothLoader` was executed, lazy loading will not work.
+::: tip Note
+Lazy loading works only when your elements are already in the DOM. Meaning, if images are loaded after the `smoothLoader` was executed, lazy loading will not work.
+:::
 
 ```html
 <!-- Regular image -->
@@ -57,6 +59,8 @@ if (myPhoto) {
     src="./images/me-min.webp"
     data-src="./images/me.webp"
     class="smooth-loader"
+    width="500"
+    height="500"
     alt="Photo of Serhii Cho"
 />
 
@@ -64,6 +68,7 @@ if (myPhoto) {
 <div
     data-src="./images/we.png"
     class="smooth-loader my-bg-image"
+    style="width: 500px; height: 500px"
 ></div>
 ```
 
@@ -88,9 +93,13 @@ I want to load a small image on the initial page load, and when person scrolls i
 />
 ```
 
-> It's important to add `width` and `height` attributes or have width and hight setup correctly with CSS. Because small image has to be filling all the space that large image is taking.
+::: warning Important
+It's important to add `width` and `height` attributes or have width and hight setup correctly with CSS. Because small image has to be filling all the space that large image is taking.
+:::
 
-> This feature works only for image elements, background images do not support it yet!
+::: tip Note
+This feature works only for image elements, background images do not support it yet!
+:::
 
 Instead of the small version of your image you can use just a small placeholder image, and it will work fine.
 
@@ -125,3 +134,5 @@ import smoothLoader from 'smooth-loader'
 
 smoothLoader()
 ```
+
+By default, it will select all images with `smooth-loader` class.
