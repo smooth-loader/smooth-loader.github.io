@@ -19,29 +19,45 @@ This package is a MUST-HAVE for every website containing multiple images on the 
 ## ✍️ Usage
 
 To make image element or background image lazy loaded:
-- Add image URL to `data-src` attribute;
-- Call `smoothLoader()` function;
+- Add image URL to `data-src` attribute
+- Call `smoothLoader()` function
 
-#### Look at several options to choose images which you want to lazy load:
+Look at several options to choose images which you want to lazy load:
+
+### Using the default selector
+Selects all images with `smooth-loader` class
 
 ```js
 import smoothLoader from 'smooth-loader'
 
-// Default selector
-// Selects all images with 'smooth-loader' class
 smoothLoader()
+```
 
-// Custom selector
-// Selects all images with 'lazy-image' class
+### Providing a custom class
+Selects all images with 'lazy-image' class
+
+```js
+import smoothLoader from 'smooth-loader'
+
 smoothLoader('.lazy-image')
+```
 
-// Elements
-// Selects all the images
+### Providing multiple elements
+Selects all the images with `querySelectorAll` method
+
+```js
+import smoothLoader from 'smooth-loader'
+
 const images = document.querySelectorAll<HTMLImageElement>('img')
 smoothLoader(images)
+```
 
-// Certain elements
-// Selects all the images
+### Providing a single element
+Selects the image with `querySelector` method
+
+```js
+import smoothLoader from 'smooth-loader'
+
 const myPhoto = document.querySelector<HTMLImageElement>('#me')
 
 if (myPhoto) {
@@ -74,7 +90,10 @@ Lazy loading works only when your elements are already in the DOM. Meaning, if i
 
 ## 🌄 Image preview
 
+### Description
 You can add a small version of the image to `src` attribute on image element `<img src="here">`, so that users don't look at the empty place when image is loading. It can be useful if you have many images on the page or you have several large images which.
+
+### How it works
 
 To use this feature, you'll need small versions of your images which will be loaded right away when the page loads. Let's say I have 2 same images with different sizes:
 
