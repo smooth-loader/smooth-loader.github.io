@@ -91,11 +91,23 @@ Lazy loading works only when your elements are already in the DOM. Meaning, if i
 ## 🌄 Image preview
 
 ### Description
-You can add a small version of the image to `src` attribute on image element `<img src="here">`, so that users don't look at the empty place when image is loading. It can be useful if you have many images on the page or you have several large images which.
+One of the nicest features of Smooth Loader is the image preview. It allows you to show a small version of the image on the initial page load, and when the user scrolls into the image view, the larger version will be loaded and it will replace the small one.
 
-![Image previedw example](/gifs/smooth-loader-image-preview.gif)
+Here is the example from one of the production-ready websites that uses Smooth Loader package:
 
-### How it works
+![Image preview example](/gifs/smooth-loader-image-preview.gif)
+
+You can check it out [here](https://serhii.io/posts) yourself, just don't forget to set the network speed to "Slow 3G" in the browser's developer tools.
+
+The small version of the image can be added to an `src` attribute on the image element and  the bigger version to a `data-src` attribute like this:
+
+```html
+<img src="/path/me-min.jpeg" data-src="/path/me.jpeg">
+```
+
+With this in place, users won't look at the empty place when image is loading. It is useful when you have many images on the page or you have several large images which take time to load.
+
+### Usage example
 
 To use this feature, you'll need small versions of your images which will be loaded right away when the page loads. Let's say I have 2 same images with different sizes:
 
@@ -115,14 +127,14 @@ I want to load a small image on the initial page load, and when person scrolls i
 ```
 
 ::: warning Important
-It's important to add `width` and `height` attributes or have width and hight setup correctly with CSS. Because small image has to be filling all the space that large image is taking.
+It's important to add `width` and `height` attributes or have width and hight setup correctly with CSS. Because small image has to be filling all the space that large image is taking. Additionally, adding `width`, `height`, and `alt` attributes to the image is a good practice for SEO.
 :::
 
 ::: tip Note
-This feature works only for image elements, background images do not support it yet!
+This feature works only for image elements, background images are not supported yet.
 :::
 
-Instead of the small version of your image you can use just a small placeholder image, and it will work fine.
+Instead of the small version of your image you can use any other small image, like a placeholder or a blurred image. It's up to you.
 
 ## ⚙️ Configurations
 
