@@ -105,7 +105,16 @@ The small version of the image can be added to an `src` attribute on the image e
 <img src="/path/me-min.jpeg" data-src="/path/me.jpeg">
 ```
 
-With this in place, users won't look at the empty place when image is loading. It is useful when you have many images on the page or you have several large images which take time to load.
+With this in place, users won't look at the empty place when image is loading.
+
+### When to use
+
+Image Preview feature is useful in the following cases:
+
+- When you have a lot of images on the page and you want to improve the user experience
+- When users have a slow internet connection and images are loading slowly
+- When you have few images on the page but they are heavy and take time to load
+- When you have GIFs on the page that are loading slowly
 
 ### Usage example
 
