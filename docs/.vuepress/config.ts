@@ -1,5 +1,7 @@
-import { defineUserConfig, defaultTheme } from 'vuepress'
+import { defineUserConfig } from 'vuepress'
 import { searchPlugin } from '@vuepress/plugin-search'
+import { viteBundler } from '@vuepress/bundler-vite'
+import { defaultTheme } from '@vuepress/theme-default'
 
 export default defineUserConfig({
     base: '/',
@@ -9,6 +11,10 @@ export default defineUserConfig({
     head: [
         ['link', { rel: 'icon', href: '/images/favicon.png' }],
     ],
+    bundler: viteBundler({
+        viteOptions: {},
+        vuePluginOptions: {},
+    }),
     plugins: [
         searchPlugin({
             locales: {
