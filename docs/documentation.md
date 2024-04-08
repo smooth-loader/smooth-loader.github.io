@@ -93,6 +93,8 @@ Lazy loading works only when your elements are already in the DOM. Meaning, if i
 ### Description
 You can add a small version of the image to `src` attribute on image element `<img src="here">`, so that users don't look at the empty place when image is loading. It can be useful if you have many images on the page or you have several large images which.
 
+![Image previedw example](/gifs/smooth-loader-image-preview.gif)
+
 ### How it works
 
 To use this feature, you'll need small versions of your images which will be loaded right away when the page loads. Let's say I have 2 same images with different sizes:
