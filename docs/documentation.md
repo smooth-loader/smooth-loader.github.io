@@ -96,8 +96,7 @@ One of the nicest features of Smooth Loader is the image preview. It allows you 
 Here is the example from one of the production-ready websites that uses Smooth Loader package:
 
 <img
-    src="/images/loading-placeholder.jpeg"
-    data-src="/gifs/smooth-loader-image-preview.gif"
+    src="/gifs/smooth-loader-image-preview.gif"
     class="smooth-loader"
     style="width: 100%"
     alt="Image preview example"
