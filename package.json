@@ -19,6 +19,5 @@
     "deploy": "yarn build && gh-pages -d docs/.vuepress/dist"
   },
   "dependencies": {
-    "smooth-loader": "^1.1.3"
   }
 }
