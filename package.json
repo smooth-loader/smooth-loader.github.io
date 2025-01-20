@@ -1,23 +1,25 @@
 {
-  "name": "smooth-loader.github.io",
-  "version": "1.0.0",
-  "main": "docs/dist/index.js",
-  "repository": "https://github.com/smooth-loader/smooth-loader.github.io",
-  "homepage": "https://smooth-loader.github.io/",
-  "author": "SerhiiCho <serhiicho@protonmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "@vuepress/bundler-vite": "^2.0.0-rc.9",
-    "@vuepress/plugin-search": "^2.0.0-rc.9",
-    "@vuepress/theme-default": "^2.0.0-rc.9",
-    "gh-pages": "^6.1.1",
-    "vuepress": "^2.0.0-rc.9"
-  },
-  "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "deploy": "yarn build && gh-pages -d docs/.vuepress/dist"
-  },
-  "dependencies": {
-  }
+    "name": "smooth-loader",
+    "main": "docs/dist/index.js",
+    "repository": "https://github.com/smooth-loader/smooth-loader.github.io",
+    "homepage": "https://smooth-loader.github.io/",
+    "author": "SerhiiCho <serhiicho@protonmail.com>",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "SerhiiCho",
+            "email": "serhiicho@protonmail.com"
+        }
+    ],
+    "scripts": {
+        "dev": "vitepress dev docs",
+        "build": "vitepress build docs",
+        "preview": "yarn build && vitepress preview docs",
+        "deploy": "yarn build && gh-pages -d docs/.vitepress/dist"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "gh-pages": "^6.2.0",
+        "vitepress": "^1.5.0"
+    }
 }
