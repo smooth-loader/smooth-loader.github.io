@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started →
-      link: /documentation
+      link: /get-started
     - theme: alt
       text: Usage example
       link: https://codesandbox.io/s/smooth-loader-example-usage-5xr6h

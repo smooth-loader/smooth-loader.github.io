@@ -21,6 +21,12 @@ export default {
                 'Copyright © 2018 - present <a href="https://serhii.io/about-me" target="_blank">Sergey Chornenkyi (Serhii Cho)</a>',
         },
 
+        sidebar: [
+            { text: 'Get Started', link: '/get-started' },
+            { text: 'Usage Guide', link: '/usage-guide' },
+            { text: 'Configurations', link: '/configurations' },
+        ],
+
         nav: [
             {
                 text: 'Docs',
