@@ -16,7 +16,7 @@ export default {
 
         footer: {
             message:
-                'Released under the <a href="https://github.com/smooth-loader/smooth-loader/blob/main/LICENSE" target="_blank">MIT License</a>',
+                'Released under the <a href="https://github.com/smooth-loader/smooth-loader/blob/master/LICENSE" target="_blank">MIT License</a>',
             copyright:
                 'Copyright © 2018 - present <a href="https://serhii.io/about-me" target="_blank">Sergey Chornenkyi (Serhii Cho)</a>',
         },
