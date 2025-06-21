@@ -30,7 +30,7 @@ export default {
         nav: [
             {
                 text: 'Docs',
-                link: '/documentation',
+                link: '/get-started',
             },
             {
                 text: 'Try it',
