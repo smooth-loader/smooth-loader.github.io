@@ -1,0 +1,13 @@
+name: smooth-loader-docs
+
+services:
+    app:
+        image: smooth-loader-docs
+        container_name: smooth-loader-docs
+        build:
+            context: .
+        volumes:
+            - .:/app
+            - /app/node_modules
+        ports:
+            - 3000:5173
