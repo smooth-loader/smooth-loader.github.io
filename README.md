@@ -44,7 +44,7 @@ You can visit `http://localhost:3000` to see your documentation.
 #### Enter the container
 To enter inside of the container, run this command:
 ```bash
-docker exec -it smooth-loader-docs sh
+docker exec -it smooth-loader-docs bash
 ```
 
 You'll be able to run NPM commands inside of the container.
