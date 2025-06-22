@@ -6,3 +6,4 @@ dist
 /docs/.vitepress/dist
 /docs/.vitepress/cache
 yarn.lock
+.DS_Store
