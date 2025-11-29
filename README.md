@@ -8,24 +8,27 @@ If you found any typo or want to improve the [website](https://smooth-loader.git
 
 ## Development
 ### With Container Engine
-If you use a container engine like [🦦 Podman](https://podman.io/) or [🐳 Docker](https://app.docker.com/), here are the steps that you can make:
+> [!NOTE]
+> If you use [🐳 Docker](https://app.docker.com/) instead of [🦦 Podman](https://podman.io/), just replace `podman-compose` with `docker compose`, and `podman` with `docker` in code examples below.
 
 #### Build an Image
-To build an image, navigate to the root of the project and run this command for Docker:
-```bash
-docker compose build
-```
+To build an image, navigate to the root of the project and run this:
+
 For Podman, run this:
 ```bash
 podman-compose build
 ```
 
-#### Run the Container
-To run a container, navigate to the root of the project and run this command for Docker:
+#### Create `node_modules`
+Run this command to install npm packages and generate a `node_modules` directory on your local machine:
+
 ```bash
-docker compose up -d
+podman-compose run --rm app npm i
 ```
-For Podman, run this:
+
+#### Run the Container
+To run a container, navigate to the root of the project and run:
+
 ```bash
 podman-compose up -d
 ```
@@ -33,11 +36,8 @@ podman-compose up -d
 You can visit `http://localhost:3000` to see your documentation.
 
 #### Enter the Container
-To enter inside of the container, run this command for Docker:
-```bash
-docker compose exec app sh
-```
-For Podman, run this:
+To enter inside of the container, run:
+
 ```bash
 podman-compose exec app sh
 ```
@@ -45,11 +45,8 @@ podman-compose exec app sh
 You'll be able to run NPM commands inside of the container.
 
 #### Stop the Container
-To cleanup after your work, run this Docker command:
-```bash
-docker compose down
-```
-For Podman, run this:
+To cleanup after your work, run:
+
 ```bash
 podman-compose down
 ```
