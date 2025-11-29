@@ -10,7 +10,7 @@ hero:
       text: Get Started →
       link: /get-started
     - theme: alt
-      text: Usage example
+      text: Try it
       link: https://codesandbox.io/s/smooth-loader-example-usage-5xr6h
   image:
     src: /images/logo.png
