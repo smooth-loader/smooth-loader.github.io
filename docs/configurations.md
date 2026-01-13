@@ -44,7 +44,7 @@ Below is an example from a production-ready website utilizing the Smooth Loader 
     alt="Image preview example"
 />
 
-You can check it out [here](https://serhii.io/posts) yourself, just don't forget to set the network speed to "Slow 3G" in the browser's developer tools.
+You can check it out [here](https://serhiicho.com/posts) yourself, just don't forget to set the network speed to "Slow 3G" in the browser's developer tools.
 
 The small version of the image can be added to an `src` attribute on the image element and  the bigger version to a `data-src` attribute like this:
 
