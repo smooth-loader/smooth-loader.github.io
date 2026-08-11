@@ -8,7 +8,7 @@ export default {
     lastUpdated: true,
 
     sitemap: {
-        hostname: 'https://smooth-loader.github.io',
+        hostname: 'https://smooth-loader.codeberg.page',
     },
 
     themeConfig: {
@@ -16,7 +16,7 @@ export default {
 
         footer: {
             message:
-                'Released under the <a href="https://github.com/smooth-loader/smooth-loader/blob/master/LICENSE" target="_blank">MIT License</a>',
+                'Released under the <a href="https://codeberg.org/smooth-loader/smooth-loader/src/branch/master/LICENSE" target="_blank">MIT License</a>',
             copyright:
                 'Copyright © 2018 - present <a href="https://serhiicho.com/about-me" target="_blank">Serhii Cho</a>',
         },
@@ -38,7 +38,7 @@ export default {
             },
             {
                 text: 'Release Notes',
-                link: 'https://github.com/smooth-loader/smooth-loader/blob/master/CHANGELOG.md',
+                link: 'https://codeberg.org/smooth-loader/smooth-loader/src/branch/master/CHANGELOG.md',
             },
         ],
 
@@ -51,9 +51,9 @@ export default {
                 link: 'https://www.npmjs.com/package/smooth-loader',
             },
             {
-                icon: 'github',
-                ariaLabel: 'GitHub',
-                link: 'https://github.com/smooth-loader/smooth-loader',
+                icon: 'codeberg',
+                ariaLabel: 'Codeberg',
+                link: 'https://codeberg.org/smooth-loader/smooth-loader',
             },
         ],
     },
