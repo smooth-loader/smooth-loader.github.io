@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Smooth Loader
   text: "Fast and lightweight"
-  tagline: Impressive JavaScript lazy loading for images
+  tagline: JavaScript lazy loading for images
   actions:
     - theme: brand
       text: Get Started →
