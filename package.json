@@ -16,7 +16,6 @@
         "build": "vitepress build docs",
         "preview": "npm run build && vitepress preview docs"
     },
-    "dependencies": {},
     "devDependencies": {
         "vitepress": "^1.6.4"
     }
