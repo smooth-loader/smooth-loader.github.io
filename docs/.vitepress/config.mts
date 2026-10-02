@@ -44,9 +44,7 @@ export default {
 
         socialLinks: [
             {
-                icon: {
-                    svg: `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256"><g><polygon fill="#C12127" points="0 256 0 0 256 0 256 256"></polygon><polygon fill="#FFFFFF" points="48 48 208 48 208 208 176 208 176 80 128 80 128 208 48 208"></polygon></g></svg>`,
-                },
+                icon: 'npm',
                 ariaLabel: 'NPM',
                 link: 'https://www.npmjs.com/package/smooth-loader',
             },
