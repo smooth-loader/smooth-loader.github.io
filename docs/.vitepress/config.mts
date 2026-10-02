@@ -1,11 +1,25 @@
+import type { HeadConfig, TransformContext } from 'vitepress'
+
 const hostname = 'https://smooth-loader.serhiicho.com'
+
+function setCanonicalTag(page: string): string {
+    page = page.replace('.md', '.html')
+    return page == 'index.html' ? hostname : `${hostname}/${page}`
+}
 
 export default {
     lang: 'en-US',
     title: 'Smooth loader',
     description:
         'Smooth loader allows you smoothly lazy load images and background images',
+
     head: [['link', { rel: 'icon', href: '/images/favicon.png' }]],
+
+    transformHead: (ctx: TransformContext) => {
+        const head: HeadConfig[] = []
+        head.push(['link', { rel: 'canonical', href: setCanonicalTag(ctx.page) }])
+        return head
+    },
 
     lastUpdated: true,
 
