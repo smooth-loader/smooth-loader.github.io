@@ -1,3 +1,5 @@
+const hostname = 'https://smooth-loader.serhiicho.com'
+
 export default {
     lang: 'en-US',
     title: 'Smooth loader',
@@ -8,7 +10,7 @@ export default {
     lastUpdated: true,
 
     sitemap: {
-        hostname: 'https://smooth-loader.codeberg.page',
+        hostname,
     },
 
     themeConfig: {
