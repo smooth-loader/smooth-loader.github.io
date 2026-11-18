@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://smooth-loader.codeberg.page/sitemap.xml
+Sitemap: https://smooth-loader.serhiicho.com/sitemap.xml
