@@ -1,5 +1,7 @@
 # Smooth Loader Web Documentation
 
+[![Build and Deploy](https://github.com/smooth-loader/smooth-loader.github.io/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/smooth-loader/smooth-loader.github.io/actions/workflows/gh-pages.yml)
+
 Official documentation website for [smooth-loader](https://github.com/smooth-loader/smooth-loader) package for JavaScript
 
 If you found any typo or want to improve the [website](https://smooth-loader.serhiicho.com), go ahead for a pull request. I would gladly review and merge your changes.
